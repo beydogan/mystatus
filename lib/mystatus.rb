@@ -14,7 +14,7 @@ Lotus::Model.configure do
   #    adapter type: :sql, uri: 'postgres://localhost/mystatus_development'
   #    adapter type: :sql, uri: 'mysql://localhost/mystatus_development'
   #
-  #adapter type: :file_system, uri: ENV['MYSTATUS_DATABASE_URL']
+  adapter type: :file_system, uri: ENV['DATABASE_URL']
 
   ##
   # Database mapping
