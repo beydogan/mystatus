@@ -5,7 +5,7 @@ gem 'rake'
 
 gem 'lotusrb',       '0.3.0'
 gem 'lotus-model',   '~> 0.3'
-
+gem 'httparty'
 
 group :test do
   gem 'minitest'

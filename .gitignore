@@ -1,3 +1,4 @@
 /db/mystatus_development
 /db/mystatus_test
 /.idea
+config/.env
