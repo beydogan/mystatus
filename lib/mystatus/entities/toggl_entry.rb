@@ -5,7 +5,14 @@ class TogglEntry
   attributes :start, :description
 
   def self.current
+    puts "GET########"
     toggl = Web::API::Toggl.new
-    self.new toggl.current_entry
+    entry = toggl.current_entry
+
+    if entry
+      self.new entry
+    else
+      nil
+    end
   end
 end

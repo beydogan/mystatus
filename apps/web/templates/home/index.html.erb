@@ -1,4 +1,22 @@
-<h1>Welcome to Lotus!</h1>
-<h3>This template is rendered by <code>Web::Views::Home::Index</code> and it's available at: <code>apps/web/templates/home/index.html.erb</code></h3>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
 
-<%= entry.description %>
+        <h1>My Status Page</h1>
+
+        <h2>NOW</h2>
+        <% if entry %>
+          <h3>I'm working on </h3>
+
+          <h2><code><%= entry.description %></code></h2>
+
+          <h3>since</h3>
+
+          <h2><code><%= DateTime.parse(entry.start).strftime('%e %b %Y %H:%M:%S%p') %></code></h2>
+        <% else %>
+          <h3>I'm being lazy</h3>
+          <p>
+            <img src="http://www.quickmeme.com/img/e1/e1226ef0795e03379cc02ff035ba882155a0babccf85a79130e38f31a6db5c5e.jpg" class="img-responsive" />
+          </p>
+        <% end %>
+    </div>
+</div>

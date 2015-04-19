@@ -3,7 +3,7 @@ module Web::Views::Home
     include Web::View
 
     def entry
-      @t=TogglEntry.new
+      TogglEntry.current
     end
   end
 end

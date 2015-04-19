@@ -1,2 +1,2 @@
 # mystatus
-A sample Status page app using current Toggle entry. Built with Lotus
+A sample Status page app using current Toggl entry. Built with Lotus
